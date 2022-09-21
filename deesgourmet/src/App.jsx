@@ -1,9 +1,16 @@
-import React from "react";
-
+import { Route, Routes, BrowserRouter } from "react-router-dom";
+import HomePage from "./pages/HomePage"
 function App() {
-    return (
-        <h1 className="font-bold">WHAT THE FUCK</h1>
-    )
+
+  return (
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />}></Route>
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
 }
 
-export default App
+export default App;
