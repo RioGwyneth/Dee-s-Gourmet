@@ -8,7 +8,7 @@ export default function NavBar() {
   return (
     <div>
       <nav className="bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-3">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center justify-between w-full">
               <div className="flex-shrink-0 flex  gap-3">
@@ -17,27 +17,24 @@ export default function NavBar() {
                   src={logo}
                   alt="Workflow"
                 />
-                <h1 className="flex items-center text-red-600 text-lg font-black">Dee’s Gourmet</h1>
+                <h1 className="flex items-center text-red-600 font-sans text-lg font-black">Dee’s Gourmet</h1>
               </div>
               <div className="hidden md:block">
-                <div className="flex items-baseline space-x-2">
+                <div className="flex items-baseline space-x-5">
                   <a href="#"className=" text-zinc-900 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium">
-                    Dashboard
+                    Home
                   </a>
 
                   <a href="#" className="text-zinc-900 hover:text-red-600 px-3 py-2 rounded-md text-sm  font-medium">
-                    Team
+                    Menu
                   </a>
 
-                  <a href="#" className="text-zinc-900 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium">
-                    Projects
+                  <a href="#" className="text-zinc-900 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium ">
+                    About
                   </a>
 
-                  <a href="#" className="text-zinc-900 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium">
-                    Calendar
-                  </a>
 
-                  <Button text="Contact Us" bgcolor="bg-red-600" padding="px-6 py-2" />
+                  <Button text="Contact Us" bgcolor="bg-red-600" padding="px-6 py-2"/>
 
                 </div>
               </div>
@@ -106,21 +103,21 @@ export default function NavBar() {
                   href="#"
                   className="hover:text-red-600 text-zinc-900 block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Dashboard
+                  Home
                 </a>
 
                 <a
                   href="#"
                   className="text-zinc-900 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Team
+                  Menu
                 </a>
 
                 <a
                   href="#"
                   className="text-zinc-900 hover:text-red-600 block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Projects
+                  About
                 </a>
 
                 <Button text="Contact Us" bgcolor="bg-red-600" padding=" py-2" width="w-full" />

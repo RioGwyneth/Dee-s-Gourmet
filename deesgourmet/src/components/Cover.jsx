@@ -9,7 +9,7 @@ export default function Cover({
   return (
     <div className="max-h-[700px] relative">
       <div className="absolute w-full h-full text-gray-200 max-h-[700px] bg-black/40 flex flex-col justify-center items-center">
-        <div className="px-4 text-center text-4xl w-full sm:text-4xl md:text-5xl lg:6xl font-bold flex justify-center ">
+        <div className="px-4 font-serif text-center text-4xl w-full sm:text-4xl md:text-5xl lg:6xl font-bold flex justify-center ">
           {text}
         </div>
         <div className="w-full flex justify-center text-center p-4">{span}</div>
