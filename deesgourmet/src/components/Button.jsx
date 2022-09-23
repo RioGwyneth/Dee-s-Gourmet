@@ -9,7 +9,7 @@ export default function Button({
 }) {
   return (
     <button
-      className={`${padding} ${width} ${bgcolor} ${textcolor} ${custom} flex items-center justify-center gap-2 font-medium `}
+      className={`${padding} ${width} ${bgcolor} ${textcolor} ${custom} flex items-center justify-center gap-2 font-medium rounded-lg`}
       onClick={onClick}
     >
       {text}{" "}

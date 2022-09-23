@@ -17,19 +17,19 @@ export default function NavBar() {
                   src={logo}
                   alt="Workflow"
                 />
-                <h1 className="flex items-center text-red-600 font-sans text-lg font-black">Dee’s Gourmet</h1>
+                <h1 className="flex items-center text-red-600 font-sans text-xl font-black">Dee’s Gourmet</h1>
               </div>
               <div className="hidden md:block">
                 <div className="flex items-baseline space-x-5">
-                  <a href="#"className=" text-zinc-900 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium">
+                  <a href="#"className=" text-zinc-900 hover:text-red-600 px-3 py-2 rounded-md  font-medium">
                     Home
                   </a>
 
-                  <a href="#" className="text-zinc-900 hover:text-red-600 px-3 py-2 rounded-md text-sm  font-medium">
+                  <a href="#" className="text-zinc-900 hover:text-red-600 px-3 py-2 rounded-md   font-medium">
                     Menu
                   </a>
 
-                  <a href="#" className="text-zinc-900 hover:text-red-600 px-3 py-2 rounded-md text-sm font-medium ">
+                  <a href="#" className="text-zinc-900 hover:text-red-600 px-3 py-2 rounded-md  font-medium ">
                     About
                   </a>
 
