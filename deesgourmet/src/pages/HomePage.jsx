@@ -16,7 +16,7 @@ export default function HomePage() {
       <div className="flex flex-col px- items-center p-10">
         <div className="flex flex-col items-center">
           <h1 className="font-bold text-xl">Party Menu</h1>
-          <p>The most commonly order food from Dee’s Gourmet</p>
+          <p className="text-center">The most commonly order food from Dee’s Gourmet</p>
         </div>
         <div className="grid content-center lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 gap-8 my-10">
           <CardCategory text="Appetizers" img={P1} />
