@@ -7,8 +7,8 @@ export default function Cover({
   withButton = false,
 }) {
   return (
-    <div className="max-h-[700px] relative">
-      <div className="absolute w-full h-full text-gray-200 max-h-[700px] bg-black/40 flex flex-col justify-center items-center">
+    <div className="max-h-[700px] relative drop-shadow-xl">
+      <div className="absolute w-full h-full text-white max-h-[700px] bg-black/40 flex flex-col justify-center items-center">
         <div className="px-4 font-serif text-center text-4xl w-full sm:text-4xl md:text-5xl lg:6xl font-bold flex justify-center ">
           {text}
         </div>
@@ -19,7 +19,7 @@ export default function Cover({
               width="w-64"
               text="View our Menu"
               textcolor="text-white"
-              custom={"border-2 border-white border-solid "}
+              custom={"border-2 border-white border-solid hover:bg-red-600 hover:border-red-600  "}
             />
           ) : null}
         </div>
