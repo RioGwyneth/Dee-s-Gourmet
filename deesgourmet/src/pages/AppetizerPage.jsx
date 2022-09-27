@@ -9,7 +9,7 @@ export default function AppetizerPage() {
   return (
     <div>
       <div>
-        <Cover img={CoverP1} text="Best Seller" span="Delicious Filipino Cuisine" />
+        <Cover img={CoverP1} text="Appetizers" span="Delicious Filipino Cuisine" />
       </div>
       <div className="flex justify-center items-center">
         <SelectionBar />

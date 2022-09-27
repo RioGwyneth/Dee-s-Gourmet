@@ -161,7 +161,7 @@ export default function NavBar() {
                   bgcolor="bg-red-600"
                   padding=" py-2"
                   width="w-full"
-                  custom="mt-12"
+                  custom="mt-10"
                 />
                 </Link>
               </div>

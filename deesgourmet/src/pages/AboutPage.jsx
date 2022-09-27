@@ -4,9 +4,11 @@ import Footer from "../components/Footer";
 import logo from "../assets/imgs/logo.png";
 
 
+
 export default function AboutPage() {
   return (
     <div>
+        
       <div>
         {" "}
         <Cover

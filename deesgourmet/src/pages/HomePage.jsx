@@ -4,12 +4,14 @@ import Button from "../components/Button";
 import Cover from "../components/Cover";
 import CoverP1 from "../assets/imgs/CoverP1.jpg";
 import Footer from "../components/Footer";
+import PopularPage from "./PopularPage";
 
 export default function HomePage() {
   return (
     <div >
       
-      <div> <Cover
+      <div> 
+        <Cover
         img={CoverP1}
         span="Delicious Filipino Cuisine"
         withButton={true}
@@ -35,6 +37,7 @@ export default function HomePage() {
           textcolor="text-red-600"
           padding="px-20 py-2"
           custom={"border-2 border-red-600 border-solid hover:bg-red-600 hover:text-white hover:border-red-600 "}
+          onClick={PopularPage}
         />
         </div>
        

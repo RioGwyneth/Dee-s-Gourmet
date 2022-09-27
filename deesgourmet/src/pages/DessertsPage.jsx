@@ -5,11 +5,11 @@ import CoverP1 from "../assets/imgs/CoverP1.jpg";
 import Footer from "../components/Footer";
 import SelectionBar from "../components/SelectionBar";
 
-export default function PopularPage() {
+export default function DessertsPage() {
   return (
     <div>
       <div>
-        <Cover img={CoverP1} text="Menu" span="Delicious Filipino Cuisine
+        <Cover img={CoverP1} text="Desserts" span="Delicious Filipino Cuisine
 
 " />
       </div>
@@ -19,8 +19,8 @@ export default function PopularPage() {
 
       <div className="flex flex-col p-10">
         <div className="flex flex-col">
-          <h1 className="font-bold text-xl">Best Seller</h1>
-          <p className="">The most commonly order food from Dee’s Gourmet</p>
+          <h1 className="font-bold text-xl">Desserts</h1>
+        
         </div>
         <div className="grid content-center lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 gap-8 my-10">
           <CardCategory text="Lumpia Shanghai" img={P1} />
