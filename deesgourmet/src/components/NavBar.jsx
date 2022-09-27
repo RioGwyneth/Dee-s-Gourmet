@@ -52,12 +52,18 @@ export default function NavBar() {
                   >
                     About
                   </Link>
-
-                  <Button
+                  <Link 
+                  to ="/"
+                     onClick={() => setActive("/")}
+                     className={changeSelectedText(active, "/")}
+                  >
+                <Button
                     text="Contact Us"
                     bgcolor="bg-red-600"
                     padding="px-6 py-2"
                   />
+                </Link>
+                 
                 </div>
               </div>
             </div>
@@ -119,7 +125,7 @@ export default function NavBar() {
           leaveTo="opacity-0 scale-95"
         >
           {(ref) => (
-            <div className="md:hidden" id="mobile-menu">
+            <div className="md:hidden " id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <Link 
                     to ="/"
@@ -145,12 +151,19 @@ export default function NavBar() {
                     About
                   </Link>
 
+                  <Link 
+                  to ="/"
+                     onClick={() => setActive("/")}
+                     className={changeSelectedText(active, "/")}
+                  >
                 <Button
                   text="Contact Us"
                   bgcolor="bg-red-600"
                   padding=" py-2"
                   width="w-full"
+                  custom="mt-12"
                 />
+                </Link>
               </div>
             </div>
           )}
