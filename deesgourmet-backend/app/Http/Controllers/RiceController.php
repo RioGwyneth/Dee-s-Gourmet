@@ -60,4 +60,11 @@ class RiceController extends Controller
         "data" => $rice
         ]);
     }
+    public function restore($id)
+    {
+        
+        Rice::withTrashed()->find($id)->restore();
+        $rice = Rice::find($id);
+        return response()->json(['message' => "Dish Successfully Restored.", 'data' => $rice]);
+    }
 }

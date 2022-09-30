@@ -29,12 +29,31 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 }); 
 
 Route::apiResource('bestseller', BestSellerController::class);
+Route::post('bestseller/restore/{id}', [BestSellerController::class,'restore']);
+
 Route::apiResource('appetizer', AppetizerController::class);
+Route::post('appetizer/restore/{id}', [AppetizerController::class,'restore']);
+
 Route::apiResource('beef', BeefController::class);
+Route::post('beef/restore/{id}', [BeefController::class,'restore']);
+
 Route::apiResource('chicken', ChickenController::class);
+Route::post('chicken/restore/{id}', [ChickenController::class,'restore']);
+
 Route::apiResource('desserts', DessertsController::class);
+Route::post('desserts/restore/{id}', [DessertsController::class,'restore']);
+
 Route::apiResource('noodle', NoodleController::class);
+Route::post('noodle/restore/{id}', [NoodleController::class,'restore']);
+
 Route::apiResource('vegetable', VegetableController::class);
+Route::post('vegetable/restore/{id}', [VegetableController::class,'restore']);
+
 Route::apiResource('pork', PorkController::class);
+Route::post('pork/restore/{id}', [PorkController::class,'restore']);
+
 Route::apiResource('seafood', SeaFoodController::class);
+Route::post('seafood/restore/{id}', [SeaFoodController::class,'restore']);
+
 Route::apiResource('rice', RiceController::class);
+Route::post('rice/restore/{id}', [RiceController::class,'restore']);

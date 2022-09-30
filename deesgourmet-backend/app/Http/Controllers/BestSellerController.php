@@ -58,8 +58,15 @@ class BestSellerController extends Controller
         $bestseller->delete();
         return response()->json([
         "success" => true,
-        "message" => "Product deleted successfully.",
+        "message" => "Dish deleted successfully.",
         "data" => $bestseller
         ]);
+    }
+    public function restore($id)
+    {
+        
+        BestSeller::withTrashed()->find($id)->restore();
+        $bestseller = BestSeller::find($id);
+        return response()->json(['message' => "Dish Successfully Restored.", 'data' => $bestseller]);
     }
 }

@@ -60,4 +60,11 @@ class VegetableController extends Controller
         "data" => $vegetable
         ]);
     }
+    public function restore($id)
+    {
+        
+        Vegetable::withTrashed()->find($id)->restore();
+        $vegetable = Vegetable::find($id);
+        return response()->json(['message' => "Dish Successfully Restored.", 'data' => $vegetable]);
+    }
 }

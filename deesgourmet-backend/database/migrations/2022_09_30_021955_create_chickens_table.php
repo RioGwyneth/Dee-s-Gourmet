@@ -20,6 +20,7 @@ class CreateChickensTable extends Migration
             $table->decimal('price_med',5,2);
             $table->decimal('price_full',5,2);
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

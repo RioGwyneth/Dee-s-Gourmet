@@ -60,4 +60,11 @@ class NoodleController extends Controller
         "data" => $noodle
         ]);
     }
+    public function restore($id)
+    {
+        
+        Noodle::withTrashed()->find($id)->restore();
+        $noodle = Noodle::find($id);
+        return response()->json(['message' => "Dish Successfully Restored.", 'data' => $noodle]);
+    }
 }

@@ -60,4 +60,11 @@ class ChickenController extends Controller
         "data" => $chicken
         ]);
     }
+    public function restore($id)
+    {
+        
+        chicken::withTrashed()->find($id)->restore();
+        $chicken = chicken::find($id);
+        return response()->json(['message' => "Dish Successfully Restored.", 'data' => $chicken]);
+    }
 }

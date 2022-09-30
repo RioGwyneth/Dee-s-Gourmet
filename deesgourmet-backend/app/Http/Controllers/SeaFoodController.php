@@ -60,4 +60,11 @@ class SeaFoodController extends Controller
         "data" => $seafood
         ]);
     }
+    public function restore($id)
+    {
+        
+        SeaFood::withTrashed()->find($id)->restore();
+        $seafood = SeaFood::find($id);
+        return response()->json(['message' => "Dish Successfully Restored.", 'data' => $seafood]);
+    }
 }

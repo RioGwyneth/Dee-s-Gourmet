@@ -109,4 +109,11 @@ class BeefController extends Controller
         "data" => $beef
         ]);
     }
+    public function restore($id)
+    {
+        
+        Beef::withTrashed()->find($id)->restore();
+        $beef = Beef::find($id);
+        return response()->json(['message' => "Dish Successfully Restored.", 'data' => $beef]);
+    }
 }

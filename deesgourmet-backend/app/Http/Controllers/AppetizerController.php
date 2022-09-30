@@ -60,4 +60,11 @@ class AppetizerController extends Controller
         "data" => $appetizer
         ]);
     }
+    public function restore($id)
+    {
+        
+        Appetizer::withTrashed()->find($id)->restore();
+        $appetizer = Appetizer::find($id);
+        return response()->json(['message' => "Dish Successfully Restored.", 'data' => $appetizer]);
+    }
 }
