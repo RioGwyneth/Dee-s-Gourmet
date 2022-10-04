@@ -13,6 +13,9 @@ import PorkPage from "./pages/PorkPage";
 import SeafoodsPage from "./pages/SeafoodsPage";
 import VegetablesPage from "./pages/VegetablesPage";
 import RicePage from "./pages/RicePage";
+import LoginPage from "./pages/admin/Login/LoginPage";
+
+
 
 function App() {
   return (
@@ -33,7 +36,11 @@ function App() {
             <Route path="/seafoods" element={<SeafoodsPage />}></Route>
             <Route path="/vegetables" element={<VegetablesPage />}></Route>
             <Route path="/rice" element={<RicePage />}></Route>
+            <Route path="/login" element={<LoginPage/>}></Route>
           </Route>
+          
+        
+
         </Routes>
       </BrowserRouter>
     </div>
