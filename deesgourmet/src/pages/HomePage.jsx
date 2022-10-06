@@ -6,10 +6,11 @@ import CoverP1 from "../assets/imgs/CoverP1.jpg";
 import Footer from "../components/Footer";
 import PopularPage from "./PopularPage";
 
+
 export default function HomePage() {
   return (
     <div >
-      
+    
       <div> 
         <Cover
         img={CoverP1}
