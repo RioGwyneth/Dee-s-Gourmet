@@ -15,6 +15,8 @@ import VegetablesPage from "./pages/VegetablesPage";
 import RicePage from "./pages/RicePage";
 import LoginPage from "./pages/admin/Login/LoginPage";
 
+import ManageCategoryPage from "./pages/admin/ManageCategoryPage";
+import ManageFoodPage from "./pages/admin/ManageFoodPage";
 
 
 function App() {
@@ -38,6 +40,8 @@ function App() {
             <Route path="/rice" element={<RicePage />}></Route>
           </Route>
           <Route path="/login" element={<LoginPage/>}></Route>
+          <Route path="/manage-category" element={<ManageCategoryPage/>}></Route>
+          <Route path="/manage-food" element={<ManageFoodPage/>}></Route>
           
         
 

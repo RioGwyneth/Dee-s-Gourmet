@@ -34,7 +34,8 @@ export default function AboutPage() {
           </p>
         </div>
       </div>
-      <Footer />
+      <Footer
+      bgcolor="bg-red-600"/>
     </div>
   );
 }

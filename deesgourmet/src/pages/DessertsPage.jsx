@@ -30,7 +30,8 @@ export default function DessertsPage() {
           <CardCategory text="Noodles" img={P1} />
         </div>
       </div>
-      <Footer />
+      <Footer
+      bgcolor="bg-red-600"/>
     </div>
   );
 }

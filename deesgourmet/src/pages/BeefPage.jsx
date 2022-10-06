@@ -27,7 +27,8 @@ export default function BeefPage() {
           <CardCategory text="Noodles" img={P1} />
         </div>
       </div>
-      <Footer />
+      <Footer
+      bgcolor="bg-red-600"/>
     </div>
   );
 }
