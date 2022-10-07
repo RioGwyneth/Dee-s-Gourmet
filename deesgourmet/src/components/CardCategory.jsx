@@ -5,7 +5,7 @@ export default function CardCategory({ text, img }) {
         <img className="rounded-md" src={img} />
         <h1 className="text-lg font-bold">{text}</h1>
        <div className="text-xs ">
-        <div>Med | <span>$35.00 </span></div>
+        <div>Half | <span>$35.00 </span></div>
         <div>Full | <span>$35.00</span></div>
         </div>
       </div>
