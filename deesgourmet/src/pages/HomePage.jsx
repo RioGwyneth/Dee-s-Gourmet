@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import PopularPage from "./PopularPage";
 
 
+
 export default function HomePage() {
   return (
     <div >

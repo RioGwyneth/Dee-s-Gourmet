@@ -1,6 +1,6 @@
 import Button from "../Button";
 import Textfield from "./Textfield";
-export default function EditCategory({ onClick }) {
+export default function EditCategoryPop({ onClick }) {
   return (
     <div className="fixed inset-0 z-10 overflow-y-auto">
       <div className="bg-black bg-opacity-30 flex items-center min-h-screen px-4 py-8">
