@@ -13,6 +13,7 @@ use App\Http\Controllers\VegetableController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\AdminController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -57,3 +58,5 @@ Route::post('seafood/restore/{id}', [SeaFoodController::class,'restore']);
 
 Route::apiResource('rice', RiceController::class);
 Route::post('rice/restore/{id}', [RiceController::class,'restore']);
+
+Route::post('login',[AdminController::class,'login']);
