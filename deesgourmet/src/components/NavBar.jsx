@@ -3,10 +3,11 @@ import { Transition } from "@headlessui/react";
 import logo from "../assets/imgs/logo.png";
 import Button from "./Button";
 import { Link } from "react-router-dom";
-
+import ContactPop from "./ContactPop";
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   const [active, setActive] = useState (window.location.pathname);
+  const [showContactPop, setShowContactPop] = useState(false);
 
   const changeSelectedText =(state, selected) => {
   const style = "px-3 py-2 font-medium ";
@@ -17,6 +18,9 @@ export default function NavBar() {
 };
   return (
     <div>
+      <ContactPop
+      showContactPop ={showContactPop}
+       onClick={() => setShowContactPop(false)} />
       <nav className="bg-white drop-shadow-xl">
         <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-3">
           <div className="flex items-center justify-between h-16">
@@ -30,9 +34,9 @@ export default function NavBar() {
               <div className="hidden md:block">
                 <div className="flex items-baseline space-x-10">
                   <Link 
-                    to ="/"
-                     onClick={() => setActive("/")}
-                     className={changeSelectedText(active, "/")}
+                    to ="/home"
+                    onClick={() => setActive("/home")}
+                     className={changeSelectedText(active, "/home")}
                   >
                     Home
                   </Link>
@@ -52,17 +56,15 @@ export default function NavBar() {
                   >
                     About
                   </Link>
-                  <Link 
-                  to ="/"
-                     onClick={() => setActive("/")}
-                     className={changeSelectedText(active, "/")}
-                  >
+                
                 <Button
                     text="Contact Us"
                     bgcolor="bg-red-600"
                     padding="px-6 py-2"
+                    showContactPop = {showContactPop}
+                    onClick={() => setShowContactPop(true)}
                   />
-                </Link>
+             
                  
                 </div>
               </div>
@@ -128,9 +130,9 @@ export default function NavBar() {
             <div className="md:hidden " id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <Link 
-                    to ="/"
-                     onClick={() => setActive("/")}
-                     className={changeSelectedText(active, "/")}
+                    to ="/home"
+                     onClick={() => setActive("/home")}
+                     className={changeSelectedText(active, "/home")}
                   >
                     Home
                   </Link>
