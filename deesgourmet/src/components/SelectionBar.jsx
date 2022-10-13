@@ -15,7 +15,7 @@ export default function SelectionBar({}) {
 
   return (
     <div className="flex justify-center w-auto m-3 ">
-      <ul class="flex flex-wrap ">
+      <ul className="flex flex-wrap ">
 
       <Link
           to="/menu"

@@ -4,6 +4,8 @@ import logo from "../assets/imgs/logo.png";
 import Button from "./Button";
 import { Link } from "react-router-dom";
 import ContactPop from "./ContactPop";
+
+
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
   const [active, setActive] = useState (window.location.pathname);
@@ -153,19 +155,17 @@ export default function NavBar() {
                     About
                   </Link>
 
-                  <Link 
-                  to ="/"
-                     onClick={() => setActive("/")}
-                     className={changeSelectedText(active, "/")}
-                  >
+                
                 <Button
                   text="Contact Us"
                   bgcolor="bg-red-600"
                   padding=" py-2"
                   width="w-full"
                   custom="mt-10"
+                  showContactPop = {showContactPop}
+                  onClick={() => setShowContactPop(true)}
                 />
-                </Link>
+              
               </div>
             </div>
           )}

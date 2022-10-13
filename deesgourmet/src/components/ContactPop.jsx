@@ -9,7 +9,7 @@ export default function ContactPop({
           <div className=" sm:flex">
             <div className="w-full flex flex-col gap-10">
                 <h1 className="font-bold text-xl">Contact Us</h1>
-            <div>
+            <div >
                 <h1 className="font-bold">Email</h1>
                 <span> mariagudelosao@gmail.com</span>
             </div>
@@ -19,7 +19,7 @@ export default function ContactPop({
             </div>
               
             <Button
-                    text="Okay"
+                    text="Done"
                     bgcolor="bg-red-600"
                     padding="px-6 py-2"
                     onClick={onClick}

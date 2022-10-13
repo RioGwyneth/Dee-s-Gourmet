@@ -1,11 +1,17 @@
 import Button from "./Button";
-
+import { useNavigate } from "react-router-dom";
 export default function Cover({
   text = " You've tried the rest, now taste the Best!",
   span = " You've tried the rest, now taste the Best!",
   img,
   withButton = false,
-}) {
+
+  
+}) 
+{
+  
+ const navigate = useNavigate ();
+ 
   return (
     <div className="max-h-[700px] relative drop-shadow-xl">
       <div className="absolute w-full h-full text-white max-h-[700px] bg-black/40 flex flex-col justify-center items-center">
@@ -20,6 +26,7 @@ export default function Cover({
               text="View our Menu"
               textcolor="text-white"
               custom={"border-2 border-white border-solid hover:bg-red-600 hover:border-red-600  "}
+              onClick={() => navigate("/menu")}
             />
           ) : null}
         </div>
