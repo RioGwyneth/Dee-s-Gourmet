@@ -23,7 +23,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<SharedLayout />}>
-            <Route path="/home" element={<HomePage />}></Route>
+            <Route path="/" element={<HomePage />}></Route>
             <Route path="/menu" element={<PopularPage />}></Route>
             <Route path="/appetizer" element={<AppetizerPage />}></Route>
             <Route path="/about" element={<AboutPage />}></Route>

@@ -21,7 +21,7 @@ export default function LoginPage(setUser) {
       axios.post("http://localhost:8000/api/login",user)
       .then((response) => {
        if(response.data!=null){
-        navigate("/home");
+        navigate("/");
        }
        else{
          alert('failed');

@@ -36,9 +36,9 @@ export default function NavBar() {
               <div className="hidden md:block">
                 <div className="flex items-baseline space-x-10">
                   <Link 
-                    to ="/home"
-                    onClick={() => setActive("/home")}
-                     className={changeSelectedText(active, "/home")}
+                    to ="/"
+                    onClick={() => setActive("/")}
+                     className={changeSelectedText(active, "/")}
                   >
                     Home
                   </Link>
@@ -132,9 +132,9 @@ export default function NavBar() {
             <div className="md:hidden " id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <Link 
-                    to ="/home"
-                     onClick={() => setActive("/home")}
-                     className={changeSelectedText(active, "/home")}
+                    to ="/"
+                     onClick={() => setActive("/")}
+                     className={changeSelectedText(active, "/")}
                   >
                     Home
                   </Link>
