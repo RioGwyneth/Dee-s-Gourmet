@@ -48,7 +48,8 @@ export default function HomePage({
         </div>
        
       </div>
-      <Footer/>
+      <Footer
+      bgcolor="bg-red-600"/>
     </div>
   );
 }
