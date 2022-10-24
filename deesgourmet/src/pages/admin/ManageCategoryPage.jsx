@@ -8,6 +8,7 @@ export default function ManageCategoryPage() {
     <div>
       <AdminNavbar />
       <Footer
+      
       bgcolor="bg-red-600"/>
         </div>
   );

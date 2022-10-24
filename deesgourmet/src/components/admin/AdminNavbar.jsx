@@ -45,6 +45,14 @@ export default function AdminNavbar() {
                     Manage Food
                   </Link>
 
+                  <Link 
+                  to ="/manage-food"
+                     onClick={() => setActive("/manage-food")}
+                     className={changeSelectedText(active, "/manage-food")}
+                  >
+                    Manage 
+                  </Link>
+
                  
                   <Link 
                   to ="/"
