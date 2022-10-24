@@ -5,6 +5,7 @@ import Cover from "../components/Cover";
 import CoverP1 from "../assets/imgs/CoverP1.jpg";
 import Footer from "../components/Footer";
 import { useNavigate } from "react-router-dom";
+import BestSellerList from "../components/food/BestSellerList";
 
 
 
@@ -29,13 +30,8 @@ export default function HomePage({
           <h1 className="font-bold text-xl">Best Seller</h1>
           <p className="text-center">The most commonly order food from Dee’s Gourmet</p>
         </div>
-        <div className="grid content-center lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 gap-8 my-10">
-          <CardCategory text="Lumpia Shanghai" img={P1} />
-          <CardCategory text="Beef" img={P1} />
-          <CardCategory text="Chicken" img={P1} />
-          <CardCategory text="Vegetables" img={P1} />
-          <CardCategory text="Noodles" img={P1} />
-        </div>
+      <BestSellerList/>
+       
         <div>
         <Button
           width="w-full"
