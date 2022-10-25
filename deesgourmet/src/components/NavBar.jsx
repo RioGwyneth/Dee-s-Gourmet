@@ -60,9 +60,10 @@ export default function NavBar() {
                   </Link>
                 
                 <Button
-                    text="Contact Us"
+                    text="Order Now"
                     bgcolor="bg-red-600"
                     padding="px-6 py-2"
+                    custom="font-bold"
                     showContactPop = {showContactPop}
                     onClick={() => setShowContactPop(true)}
                   />
@@ -157,11 +158,11 @@ export default function NavBar() {
 
                 
                 <Button
-                  text="Contact Us"
+                  text="Order Now"
                   bgcolor="bg-red-600"
                   padding=" py-2"
                   width="w-full"
-                  custom="mt-10"
+                  custom="mt-10 font-bold"
                   showContactPop = {showContactPop}
                   onClick={() => setShowContactPop(true)}
                 />

@@ -30,11 +30,11 @@ export default function AdminNavbar() {
               <div className="hidden md:block">
                 <div className="flex items-baseline space-x-10">
                   <Link 
-                    to ="/manage-category"
-                     onClick={() => setActive("/manage-category")}
-                     className={changeSelectedText(active, "/manage-category")}
+                    to ="/manage-info"
+                     onClick={() => setActive("/manage-info")}
+                     className={changeSelectedText(active, "/manage-info")}
                   >
-                    Manage Category
+                    Manage Info
                   </Link>
 
                   <Link 
@@ -45,19 +45,11 @@ export default function AdminNavbar() {
                     Manage Food
                   </Link>
 
-                  <Link 
-                  to ="/manage-food"
-                     onClick={() => setActive("/manage-food")}
-                     className={changeSelectedText(active, "/manage-food")}
-                  >
-                    Manage 
-                  </Link>
-
                  
                   <Link 
-                  to ="/"
-                     onClick={() => setActive("/")}
-                     className={changeSelectedText(active, "/")}
+                  to ="/login"
+                     onClick={() => setActive("/login")}
+                     className={changeSelectedText(active, "/login")}
                   >
                 <Button
                     text="Logout"
@@ -130,11 +122,11 @@ export default function AdminNavbar() {
             <div className="md:hidden " id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <Link 
-                    to ="/manage-category"
-                     onClick={() => setActive("/manage-category")}
-                     className={changeSelectedText(active, "/manage-category")}
+                    to ="/manage-info"
+                     onClick={() => setActive("/manage-info")}
+                     className={changeSelectedText(active, "/manage-info")}
                   >
-                    Manage Category
+                    Manage Info
                   </Link>
 
                   <Link 
@@ -147,12 +139,12 @@ export default function AdminNavbar() {
 
 
                   <Link 
-                  to ="/"
-                     onClick={() => setActive("/")}
-                     className={changeSelectedText(active, "/")}
+                  to ="/login"
+                     onClick={() => setActive("/login")}
+                     className={changeSelectedText(active, "/login")}
                   >
                 <Button
-                  text="Contact Us"
+                  text="Logout"
                   bgcolor="bg-red-600"
                   padding=" py-2"
                   width="w-full"

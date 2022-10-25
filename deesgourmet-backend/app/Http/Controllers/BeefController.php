@@ -18,7 +18,7 @@ class BeefController extends Controller
 
         return response() ->json([
             "success" => true,
-            "message" => "Best Seller Dishes",
+            "message" => "Beef",
             "data" => $beef
         ]);
     }

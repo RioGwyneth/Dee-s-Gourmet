@@ -13,7 +13,7 @@ class SeaFoodController extends Controller
 
         return response() ->json([
             "success" => true,
-            "message" => "Best Seller Dishes",
+            "message" => "Seafoods",
             "data" => $seafood
         ]);
     }

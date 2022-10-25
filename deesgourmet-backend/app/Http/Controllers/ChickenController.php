@@ -13,7 +13,7 @@ class ChickenController extends Controller
 
         return response() ->json([
             "success" => true,
-            "message" => "Best Seller Dishes",
+            "message" => "Chicken",
             "data" => $chicken
         ]);
     }

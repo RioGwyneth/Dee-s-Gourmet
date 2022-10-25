@@ -13,7 +13,7 @@ class NoodleController extends Controller
 
         return response() ->json([
             "success" => true,
-            "message" => "Best Seller Dishes",
+            "message" => "Noodles",
             "data" => $noodle
         ]);
     }
