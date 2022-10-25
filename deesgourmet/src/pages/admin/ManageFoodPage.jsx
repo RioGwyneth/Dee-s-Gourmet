@@ -1,7 +1,7 @@
 import AdminNavbar from "../../components/admin/AdminNavbar";
 import Footer from "../../components/Footer";
 
-export default function ManageCategoryPage() {
+export default function ManageFoodPage() {
     return (
       <div>
       <AdminNavbar/>

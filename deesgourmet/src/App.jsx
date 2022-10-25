@@ -14,8 +14,8 @@ import SeafoodsPage from "./pages/SeafoodsPage";
 import VegetablesPage from "./pages/VegetablesPage";
 import RicePage from "./pages/RicePage";
 import LoginPage from "./pages/admin/Login/LoginPage";
-
-import ManageCategoryPage from "./pages/admin/ManageCategoryPage";
+ 
+import ManageInfoPage from "./pages/admin/ManageInfoPage";
 import ManageFoodPage from "./pages/admin/ManageFoodPage";
 
 
@@ -40,7 +40,7 @@ function App() {
             <Route path="/rice" element={<RicePage />}></Route>
           </Route>
           <Route path="/login" element={<LoginPage/>}></Route>
-          <Route path="/manage-category" element={<ManageCategoryPage/>}></Route>
+          <Route path="/manage-info" element={<ManageInfoPage/>}></Route>
           <Route path="/manage-food" element={<ManageFoodPage/>}></Route>
           
         

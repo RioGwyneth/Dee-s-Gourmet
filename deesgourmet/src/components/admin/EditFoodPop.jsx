@@ -2,8 +2,9 @@ import Button from "../Button";
 import DropDown from "./DropDown";
 import ImageUploader from "./ImageUploader";
 import Textfield from "./Textfield";
-export default function EditFoodPop({ onClick }) {
-  return (
+export default function EditFoodPop({ 
+  showEditFoodPop, action}) {
+  return showEditFoodPop ?(
     <div className="fixed inset-0 z-10 overflow-y-auto">
       <div className="bg-black bg-opacity-30 flex items-center min-h-screen px-4 py-8">
         <div className="relative w-full max-w-xl p-8 mx-auto bg-white rounded-md shadow-lg">
@@ -56,5 +57,5 @@ export default function EditFoodPop({ onClick }) {
         </div>
       </div>
     </div>
-  );
+  ) : null;
 }
