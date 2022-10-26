@@ -21,7 +21,7 @@ class ChickenController extends Controller
     {
     $validatedData = $request->validate([
         'dish_name' => 'required|max:20',
-        'image' => 'required',
+        'image' => 'nullable',
         'price_med' => 'required',
         'price_full' => 'required',
 

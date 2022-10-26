@@ -2,10 +2,10 @@ import Button from "../Button";
 import DropDown from "./DropDown";
 import ImageUploader from "./ImageUploader";
 import Textfield from "./Textfield";
-import { PostBestSeller } from "../../api/ApiBestSeller";
+import { PostAppetizer } from "../../api/ApiAppetizer";
 import { useState } from "react";
-export default function AddFoodPop({ 
-  showAddFoodPop, onClick}) {
+export default function AddAppetizerPop({ 
+  showAddAppetizerPop, onClick}) {
 
     const [formValues, setFormValues] = useState({
       dish_name: "",
@@ -45,14 +45,14 @@ export default function AddFoodPop({
     };
 
     const saveFormData = async () => {
-      const api_request = await PostBestSeller(formValues);
+      const api_request = await PostAppetizer(formValues);
       if (!api_request.error) return true;
       alert(api_request.error);
       console.log(api_request.error);
       return false;
     };
 
-  return showAddFoodPop ?(
+  return showAddAppetizerPop ?(
     <div className="fixed inset-0 z-10 overflow-y-auto">
       <div className="bg-black bg-opacity-30 flex items-center min-h-screen px-4 py-8">
         <div className="relative w-full max-w-sm  p-8 mx-auto bg-white rounded-md shadow-lg">

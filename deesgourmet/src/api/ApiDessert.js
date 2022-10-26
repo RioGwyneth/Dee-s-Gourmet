@@ -19,5 +19,22 @@ export const GetDessert = async () =>{
   return resolved;
 }
 
+export const PostDessert = async (data) => {
+  const resolved = {
+    response: null,
+    error: null,
+  };
+
+  try {
+    resolved.response = await axios.post(`${base_url}`, data);
+  } catch (e) {
+    resolved.error = e;
+  }
+
+  return resolved;
+}
+
+
+
   
   

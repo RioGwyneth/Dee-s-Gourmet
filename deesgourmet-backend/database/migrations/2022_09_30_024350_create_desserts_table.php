@@ -16,7 +16,7 @@ class CreateDessertsTable extends Migration
         Schema::create('desserts', function (Blueprint $table) {
             $table->id();
             $table->string('dish_name');
-            $table->binary('image');
+            $table->binary('image')->nullable();
             $table->decimal('price_med',5,2);
             $table->decimal('price_full',5,2);
             $table->timestamps();

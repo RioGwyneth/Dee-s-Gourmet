@@ -32,17 +32,6 @@ export default function HomePage({
         </div>
       <BestSellerList/>
        
-        <div>
-        <Button
-          width="w-full"
-          text="View More"
-          textcolor="text-red-600"
-          padding="px-20 py-2"
-          custom={"border-2 border-red-600 border-solid hover:bg-red-600 hover:text-white hover:border-red-600 "}
-          onClick={() => navigate("/menu")}
-        />
-        </div>
-       
       </div>
       <Footer
       bgcolor="bg-red-600"/>

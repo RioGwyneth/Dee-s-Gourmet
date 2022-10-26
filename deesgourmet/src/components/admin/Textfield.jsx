@@ -1,4 +1,4 @@
-export default function Textfield({ padding = "p-3", ...other }) {
+export default function Textfield({ padding = "p-3", invalidError, ...other }) {
   return (
     <div>
       <div
