@@ -60,7 +60,7 @@ export default function ManageFoodPage() {
           </div>
        
         <div className="">
-        <Button text="Add Food" bgcolor="bg-red-600" padding="px-6 py-2"  onClick={() => setShowAddFoodPop(true)} />
+        <Button text="Add Food" bgcolor="bg-red-600" padding="px-6 py-2"  onClick={() => setShowAddFoodPop(true)}/>
         </div>
          
         </div>

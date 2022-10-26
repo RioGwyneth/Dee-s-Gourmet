@@ -19,5 +19,21 @@ export const GetVegetable = async () =>{
   return resolved;
 }
 
-  
+export const PostVegetable = async (data) => {
+  const resolved = {
+    response: null,
+    error: null,
+  };
+
+  try {
+    resolved.response = await axios.post(`${base_url}`, data);
+  } catch (e) {
+    resolved.error = e;
+  }
+
+  return resolved;
+}
+
+
+
   

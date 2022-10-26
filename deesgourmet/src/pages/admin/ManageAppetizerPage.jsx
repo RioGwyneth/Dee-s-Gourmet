@@ -9,12 +9,12 @@ import { useEffect } from "react";
 import CardCategory from "../../components/CardCategory";
 import Button from "../../components/Button";
 import CategoryBar from "../../components/admin/ManageFood/CategoryBar";
-import AddFoodPop from "../../components/admin/AddFoodPop";
+import AddAppetizerPop from "../../components/admin/AddAppetizerPop";
 export default function ManageAppetizerPage() {
   const [appetizer, setAppetizer] = useState([]);
   const [showEditFoodPop, setShowEditFoodPop] = useState(false);
   const [showDeleteFoodPop, setShowDeleteFoodPop] = useState(false);
-  const [showAddFoodPop, setShowAddFoodPop] = useState(false);
+  const [showAddAppetizerPop, setShowAddAppetizerPop] = useState(false);
 
 
   const getAppetizer = async () => {
@@ -46,9 +46,9 @@ export default function ManageAppetizerPage() {
         showDeleteFoodPop={showDeleteFoodPop}
         onClick={() => setShowDeleteFoodPop(false)}
       />
- <AddFoodPop
-       showAddFoodPop={showAddFoodPop}
-       onClick={() => setShowAddFoodPop(false)}
+ <AddAppetizerPop
+       showAddAppetizerPop={showAddAppetizerPop}
+       onClick={() => setShowAddAppetizerPop(false)}
       />
       <AdminNavbar />
       <div className="flex flex-col p-10">
@@ -60,7 +60,7 @@ export default function ManageAppetizerPage() {
           </div>
        
         <div className="">
-        <Button text="Add Food" bgcolor="bg-red-600" padding="px-6 py-2"  onClick={() => setShowAddFoodPop(true)} />
+        <Button text="Add Food" bgcolor="bg-red-600" padding="px-6 py-2"  onClick={() => setShowAddAppetizerPop(true)} />
         </div>
         </div>
         <div className="grid content-center lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 gap-8 my-10">

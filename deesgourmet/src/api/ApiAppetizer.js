@@ -19,5 +19,34 @@ export const GetAppetizer = async () =>{
   return resolved;
 }
 
-  
+export const PostAppetizer = async (data) => {
+  const resolved = {
+    response: null,
+    error: null,
+  };
+
+  try {
+    resolved.response = await axios.post(`${base_url}`, data);
+  } catch (e) {
+    resolved.error = e;
+  }
+
+  return resolved;
+}
+
+export const UpdateAppetizer = async (data) => {
+  const resolved = {
+    response: null,
+    error: null,
+  };
+
+  try {
+    resolved.response = await axios.put(`${base_url}`, data);
+  } catch (e) {
+    resolved.error = e;
+  }
+
+  return resolved;
+}
+
   
