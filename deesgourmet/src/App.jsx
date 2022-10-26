@@ -16,7 +16,18 @@ import RicePage from "./pages/RicePage";
 import LoginPage from "./pages/admin/Login/LoginPage";
  
 import ManageInfoPage from "./pages/admin/ManageInfoPage";
+
 import ManageFoodPage from "./pages/admin/ManageFoodPage";
+import ManageAppetizerPage from "./pages/admin/ManageAppetizerPage";
+import ManageBeefPage from "./pages/admin/ManageBeefPage";
+import ManageChickenPage from "./pages/admin/ManageChickenPage";
+import ManageDessertPage from "./pages/admin/ManageDessertPage";
+import ManageNoodlesPage from "./pages/admin/ManageNoodlesPage";
+import ManagePorkPage from "./pages/admin/ManagePorkPage";
+import ManageRicePage from "./pages/admin/ManageRicePage";
+import ManageSeafoodPage from "./pages/admin/ManageSeafoodPage";
+import ManageVegetablePage from "./pages/admin/ManageVegetablePage";
+
 
 
 function App() {
@@ -41,7 +52,17 @@ function App() {
           </Route>
           <Route path="/login" element={<LoginPage/>}></Route>
           <Route path="/manage-info" element={<ManageInfoPage/>}></Route>
+
           <Route path="/manage-food" element={<ManageFoodPage/>}></Route>
+          <Route path="/manage-appetizer" element={<ManageAppetizerPage/>}></Route>
+          <Route path="/manage-beef" element={<ManageBeefPage/>}></Route>
+          <Route path="/manage-chicken" element={<ManageChickenPage/>}></Route>
+          <Route path="/manage-desserts" element={<ManageDessertPage/>}></Route>
+          <Route path="/manage-noodles" element={<ManageNoodlesPage/>}></Route>
+          <Route path="/manage-pork" element={<ManagePorkPage/>}></Route>
+          <Route path="/manage-rice" element={<ManageRicePage/>}></Route>
+          <Route path="/manage-seafoods" element={<ManageSeafoodPage/>}></Route>
+          <Route path="/manage-vegetables" element={<ManageVegetablePage/>}></Route>
           
         
 
