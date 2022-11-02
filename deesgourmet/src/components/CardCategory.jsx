@@ -13,7 +13,7 @@ edit = [Button]
  
 
   return (
-    <div className="card drop-shadow-xl bg-white p-4 rounded-lg transform transition duration-500 hover:scale-110">
+    <div className="card drop-shadow-xl bg-white p-4 rounded-lg transform transition ">
       <div onClick={onClick} className="card__body flex flex-col  gap-3 ">
         <img className="rounded-md" src={image} />
         <h1 className="text-lg font-bold">{dish_name}</h1>

@@ -82,13 +82,7 @@ export default function ManageFoodPage() {
                     custom="w-1/6 text-red-600 underline"
                   />
                 }
-                edit={
-                  <Button
-                    text="Edit"
-                    onClick={() => setShowEditFoodPop(true)}
-                    custom="w-1/6 text-red-600 underline"
-                  />
-                }
+              
               />
             </div>
           ))}
