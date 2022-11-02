@@ -15,7 +15,6 @@ import VegetablesPage from "./pages/VegetablesPage";
 import RicePage from "./pages/RicePage";
 import LoginPage from "./pages/admin/Login/LoginPage";
  
-import ManageInfoPage from "./pages/admin/ManageInfoPage";
 
 import ManageFoodPage from "./pages/admin/ManageFoodPage";
 import ManageAppetizerPage from "./pages/admin/ManageAppetizerPage";
@@ -51,7 +50,7 @@ function App() {
             <Route path="/rice" element={<RicePage />}></Route>
           </Route>
           <Route path="/login" element={<LoginPage/>}></Route>
-          <Route path="/manage-info" element={<ManageInfoPage/>}></Route>
+        
 
           <Route path="/manage-food" element={<ManageFoodPage/>}></Route>
           <Route path="/manage-appetizer" element={<ManageAppetizerPage/>}></Route>
