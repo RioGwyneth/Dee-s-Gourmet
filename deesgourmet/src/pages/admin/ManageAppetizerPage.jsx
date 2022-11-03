@@ -1,7 +1,6 @@
 import Footer from "../../components/Footer";
 import React from "react";
 import AdminNavbar from "../../components/admin/AdminNavbar";
-import EditFoodPop from "../../components/admin/EditFoodPop";
 import DeletePop from "../../components/admin/DeletePop";
 import { useState } from "react";
 import { GetAppetizer } from "../../api/ApiAppetizer";
@@ -12,7 +11,7 @@ import CategoryBar from "../../components/admin/ManageFood/CategoryBar";
 import AddAppetizerPop from "../../components/admin/AddAppetizerPop";
 export default function ManageAppetizerPage() {
   const [appetizer, setAppetizer] = useState([]);
-  const [showEditFoodPop, setShowEditFoodPop] = useState(false);
+
   const [showDeleteFoodPop, setShowDeleteFoodPop] = useState(false);
   const [showAddAppetizerPop, setShowAddAppetizerPop] = useState(false);
 
@@ -38,10 +37,7 @@ export default function ManageAppetizerPage() {
   return (
 
     <div>
-           <EditFoodPop
-        showEditFoodPop={showEditFoodPop}
-        onClick={() => setShowEditFoodPop(false)}
-      />
+       
       <DeletePop
         showDeleteFoodPop={showDeleteFoodPop}
         onClick={() => setShowDeleteFoodPop(false)}

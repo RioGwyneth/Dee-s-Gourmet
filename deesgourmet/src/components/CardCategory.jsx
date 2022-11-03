@@ -6,8 +6,7 @@ dish_name,
 price_med,
 price_full,
 onClick,
-remove = [Button],
-edit = [Button]
+remove,
 
 }) {
  
@@ -22,7 +21,7 @@ edit = [Button]
         <div>Full | $<span>{price_full}</span></div>
         </div>
        <div className="flex justify-end gap-8 mx-5">
-       {edit} {remove} 
+        {remove} 
        </div>
       </div>
     </div>

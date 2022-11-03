@@ -1,7 +1,7 @@
 import { useState } from "react";
-import CardCategory from "../CardCategory";
 import { useEffect } from "react";
 import { GetAppetizer } from "../../api/ApiAppetizer";
+import CardCategory from "../CardCategory";
 export default function AppetizersList({
 title
   }) {

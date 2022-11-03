@@ -1,5 +1,3 @@
-import CardCategory from "../components/CardCategory";
-import P1 from "../assets/imgs/P1.jpg";
 import Cover from "../components/Cover";
 import CoverP1 from "../assets/imgs/CoverP1.jpg";
 import Footer from "../components/Footer";
