@@ -1,7 +1,23 @@
 import Button from "../Button";
-
-export default function DeletePop({ showDeleteFoodPop, onClick
+import { RemoveFood } from "../../api/ApiAppetizer";
+import { useNavigate } from "react-router-dom";
+export default function DeletePop({ 
+  showDeleteFoodPop, 
+  cancelFunction,
+  onClick,
+  id
   }) {
+
+  const navigate = useNavigate ();
+  const removeHandler = async () => {
+    const api_request = await RemoveFood(id);
+    if (!api_request.error) {
+      window.location.reload();
+    } else {
+      alert(api_request.error);
+      console.log(api_request.error);
+    }
+  };
   return showDeleteFoodPop ? (
     <div className="fixed inset-0 z-10 overflow-y-auto">
       <div className="bg-black bg-opacity-30 flex items-center min-h-screen px-4 py-8">
@@ -18,7 +34,7 @@ export default function DeletePop({ showDeleteFoodPop, onClick
                 />
               
                 <Button 
-                onClick={onClick}
+                onClick={() => removeHandler()}
                 text="Yes" 
                 bgcolor="bg-red-600" 
                 padding="px-6 py-2" 

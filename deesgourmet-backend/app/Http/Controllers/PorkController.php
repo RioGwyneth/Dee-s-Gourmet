@@ -60,11 +60,11 @@ class PorkController extends Controller
         "data" => $pork
         ]);
     }
-    public function restore($id)
-    {
+    // public function restore($id)
+    // {
         
-        Pork::withTrashed()->find($id)->restore();
-        $pork = Pork::find($id);
-        return response()->json(['message' => "Dish Successfully Restored.", 'data' => $pork]);
-    }
+    //     Pork::withTrashed()->find($id)->restore();
+    //     $pork = Pork::find($id);
+    //     return response()->json(['message' => "Dish Successfully Restored.", 'data' => $pork]);
+    // }
 }
