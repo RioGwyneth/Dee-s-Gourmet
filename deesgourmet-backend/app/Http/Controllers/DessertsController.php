@@ -60,11 +60,11 @@ class DessertsController extends Controller
         "data" => $dessert
         ]);
     }
-    public function restore($id)
-    {
+    // public function restore($id)
+    // {
         
-        Desserts::withTrashed()->find($id)->restore();
-        $dessert = Desserts::find($id);
-        return response()->json(['message' => "Dish Successfully Restored.", 'data' => $dessert]);
-    }
+    //     Desserts::withTrashed()->find($id)->restore();
+    //     $dessert = Desserts::find($id);
+    //     return response()->json(['message' => "Dish Successfully Restored.", 'data' => $dessert]);
+    // }
 }

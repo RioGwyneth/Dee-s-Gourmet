@@ -49,4 +49,20 @@ export const UpdateAppetizer = async (data) => {
   return resolved;
 }
 
+
+export const RemoveFood = async (id) =>  {
+  const resolved = {
+    response: null,
+    error: null,
+  };
+
+  try {
+    resolved.response = await axios.delete(`${base_url}/${id}`);
+  } catch (e) {
+    resolved.error = e;
+  }
+
+  return resolved;
+}
+
   

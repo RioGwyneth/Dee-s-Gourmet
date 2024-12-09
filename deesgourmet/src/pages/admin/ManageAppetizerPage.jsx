@@ -1,10 +1,9 @@
 import Footer from "../../components/Footer";
 import React from "react";
 import AdminNavbar from "../../components/admin/AdminNavbar";
-import EditFoodPop from "../../components/admin/EditFoodPop";
 import DeletePop from "../../components/admin/DeletePop";
 import { useState } from "react";
-import { GetAppetizer } from "../../api/ApiAppetizer";
+import { GetAppetizer, RemoveFood } from "../../api/ApiAppetizer";
 import { useEffect } from "react";
 import CardCategory from "../../components/CardCategory";
 import Button from "../../components/Button";
@@ -12,8 +11,6 @@ import CategoryBar from "../../components/admin/ManageFood/CategoryBar";
 import AddAppetizerPop from "../../components/admin/AddAppetizerPop";
 export default function ManageAppetizerPage() {
   const [appetizer, setAppetizer] = useState([]);
-  const [showEditFoodPop, setShowEditFoodPop] = useState(false);
-  const [showDeleteFoodPop, setShowDeleteFoodPop] = useState(false);
   const [showAddAppetizerPop, setShowAddAppetizerPop] = useState(false);
 
 
@@ -27,6 +24,7 @@ export default function ManageAppetizerPage() {
     }
   };
 
+
   useEffect(() => {
     getAppetizer();
   }, []);
@@ -38,14 +36,8 @@ export default function ManageAppetizerPage() {
   return (
 
     <div>
-           <EditFoodPop
-        showEditFoodPop={showEditFoodPop}
-        onClick={() => setShowEditFoodPop(false)}
-      />
-      <DeletePop
-        showDeleteFoodPop={showDeleteFoodPop}
-        onClick={() => setShowDeleteFoodPop(false)}
-      />
+       
+      
  <AddAppetizerPop
        showAddAppetizerPop={showAddAppetizerPop}
        onClick={() => setShowAddAppetizerPop(false)}
@@ -66,26 +58,17 @@ export default function ManageAppetizerPage() {
         <div className="grid content-center lg:grid-cols-5 md:grid-cols-3 sm:grid-cols-2 gap-8 my-10">
       {appetizer.map((appetizers, index) => (
             <div key={index}>
+
               <CardCategory
+                id={appetizers.id}
                 image={appetizers.image}
                 dish_name={appetizers.dish_name}
                 price_med={appetizers.price_med}
                 price_full={appetizers.price_full}
-                remove=
-                {
-                <Button
-                  text="Delete" 
-                  onClick={() => setShowDeleteFoodPop(true)}
-                  custom="w-1/6 text-red-600 underline" />
-                }
-                edit= 
-                {
-                  <Button
-                    text="Edit" 
-                    onClick={() => setShowEditFoodPop(true)}
-                    custom="w-1/6 text-red-600 underline" />
-                  }
+                remove={true}
+              
               />
+
             </div>
           ))}
       </div>

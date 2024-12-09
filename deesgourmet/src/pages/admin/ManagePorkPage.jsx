@@ -78,13 +78,7 @@ export default function ManagePorkPage() {
                   onClick={() => setShowDeleteFoodPop(true)}
                   custom="w-1/6 text-red-600 underline" />
                 }
-                edit= 
-                {
-                  <Button
-                    text="Edit" 
-                    onClick={() => setShowEditFoodPop(true)}
-                    custom="w-1/6 text-red-600 underline" />
-                  }
+               
               />
             </div>
           ))}

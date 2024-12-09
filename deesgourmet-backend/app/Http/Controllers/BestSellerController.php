@@ -62,11 +62,11 @@ class BestSellerController extends Controller
         "data" => $bestseller
         ]);
     }
-    public function restore($id)
-    {
+    // public function restore($id)
+    // {
         
-        BestSeller::withTrashed()->find($id)->restore();
-        $bestseller = BestSeller::find($id);
-        return response()->json(['message' => "Dish Successfully Restored.", 'data' => $bestseller]);
-    }
+    //     BestSeller::withTrashed()->find($id)->restore();
+    //     $bestseller = BestSeller::find($id);
+    //     return response()->json(['message' => "Dish Successfully Restored.", 'data' => $bestseller]);
+    // }
 }

@@ -29,21 +29,8 @@ export default function AdminNavbar() {
               </div>
               <div className="hidden md:block">
                 <div className="flex items-baseline space-x-10">
-                  <Link 
-                    to ="/manage-info"
-                     onClick={() => setActive("/manage-info")}
-                     className={changeSelectedText(active, "/manage-info")}
-                  >
-                    Manage Info
-                  </Link>
-
-                  <Link 
-                  to ="/manage-food"
-                     onClick={() => setActive("/manage-food")}
-                     className={changeSelectedText(active, "/manage-food")}
-                  >
-                    Manage Food
-                  </Link>
+                
+                 
 
                  
                   <Link 
@@ -121,21 +108,6 @@ export default function AdminNavbar() {
           {(ref) => (
             <div className="md:hidden " id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <Link 
-                    to ="/manage-info"
-                     onClick={() => setActive("/manage-info")}
-                     className={changeSelectedText(active, "/manage-info")}
-                  >
-                    Manage Info
-                  </Link>
-
-                  <Link 
-                  to ="/manage-food"
-                     onClick={() => setActive("/manage-food")}
-                     className={changeSelectedText(active, "/manage-food")}
-                  >
-                    Manage Food
-                  </Link>
 
 
                   <Link 
